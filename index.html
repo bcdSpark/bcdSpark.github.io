@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Portfolio</title>
+    <meta name="description" content="Showcase of assets by Max">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Max Portfolio</h1>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#video" class="nav-link">Video</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gallery" class="gallery-section">
+            <h2 class="section-title">Image Gallery</h2>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/black and white-DIhsovyk.webp" 
+                        alt="Black and white image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/black and white-DIhsovyk.webp"
+                    >
+                    <figcaption class="image-caption">Black & White</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/bleu gain-CWuqwI9I.webp" 
+                        alt="Bleu gain image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/bleu gain-CWuqwI9I.webp"
+                    >
+                    <figcaption class="image-caption">Bleu Gain</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/blue port-BMl60aXj.webp" 
+                        alt="Blue port image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/blue port-BMl60aXj.webp"
+                    >
+                    <figcaption class="image-caption">Blue Port</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/fav 2-CEDI_Ocd.webp" 
+                        alt="Fav 2 image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/fav 2-CEDI_Ocd.webp"
+                    >
+                    <figcaption class="image-caption">Fav 2</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/fav-COrSxVuv.webp" 
+                        alt="Fav image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/fav-COrSxVuv.webp"
+                    >
+                    <figcaption class="image-caption">Fav</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img 
+                        src="assets/images/red-Bm3JVpEs.webp" 
+                        alt="Red image"
+                        loading="lazy"
+                        class="gallery-image"
+                        data-fullsize="assets/images/red-Bm3JVpEs.webp"
+                    >
+                    <figcaption class="image-caption">Red</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="video" class="video-section">
+            <h2 class="section-title">Video</h2>
+            <div class="video-container">
+                <video 
+                    src="assets/videos/sad feet going home 1.webm" 
+                    controls 
+                    playsinline
+                    preload="metadata"
+                    class="video-player"
+                >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> Max Portfolio</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button type="button" class="lightbox-close" aria-label="Close lightbox">
+            <span class="sr-only">Close</span>
+        </button>
+        <img src="" alt="" class="lightbox-image">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <div id="loading-indicator" class="loading-indicator" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
